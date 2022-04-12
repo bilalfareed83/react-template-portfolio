@@ -1,0 +1,31 @@
+.scroll-top{
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+
+.scroll-top ion-icon{
+    width: 4rem;
+    height:4rem;
+    background-color: var(--helper);
+    display: inline-block;
+    padding: 1.4rem 1.8rem;
+    color: var(--heading);
+    z-index: 1;
+    animation: water-wave 3s linear infinite;
+}
+
+@keyframes water-wave{
+    0%{
+        border-radius:56% 44% 70% 30% / 30% 54% 46% 70% ;
+    }
+    50%{
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%  ;
+    }
+    100%{
+        border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    }
+
+}

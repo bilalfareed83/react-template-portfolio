@@ -1,50 +1,52 @@
-.n-wrapper {
-  height: 10vh;
+.header {
+  padding: 0 4.8rem;
+  height: 10rem;
+  background-color: var(--bg);
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin-bottom: 2rem;
-  top: 0;
 }
-.n-left {
-  flex: 1;
-  align-items: center;
-  justify-content: left;
+
+.header img {
+  height: 5rem;
+}
+
+.navbar {
+}
+
+.navbar-lists {
   display: flex;
-  gap: 2rem;
+  gap: 4.8rem;
 }
 
-.n-name {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-.n-right {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  font-weight: 400;
-}
-
-.n-list {
-  flex: 10;
-}
-.n-list > ul {
-  display: flex;
-  gap: 2rem;
-  margin-right: 4rem;
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--balck);
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s linear;
 }
 
-.n-list > ul :hover {
-  color: var(--orange);
-  cursor: pointer;
+.navbar-link:hover,
+.navbar-link:active {
+  color: var(--helper);
 }
 
-.n-button {
-  flex: 2;
+.home-link {
 }
 
-@media screen and (max-width: 480px) {
-  .n-list {
-    display: none;
-  }
+.about.link {
+}
+
+.services-link {
+}
+
+.portfolio-link {
+}
+
+.contact-link {
 }

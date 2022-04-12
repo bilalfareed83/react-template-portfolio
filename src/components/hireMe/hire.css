@@ -1,0 +1,37 @@
+.section-hire{
+    background-image: url("../../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    position: relative;
+    transition: all .7s linear;
+    text-align: center;
+}
+
+.section-hire .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay);
+    opacity: 0.6;
+}
+
+.section-hire .container{
+    position: relative;
+}
+
+
+.section-hire h2{
+    font-size: 5.2rem;
+}
+
+.section-hire span{
+    color: #a0f669;
+}
+
+.section-hire h2, .section-hire p{
+    color: var(--white);
+    margin-bottom: 1.8rem;
+}
