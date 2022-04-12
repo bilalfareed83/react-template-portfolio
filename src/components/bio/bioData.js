@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export const BioData = () => {
   return (
-    <section className="section-bio section">
+    <section className="section-bio section" id="about">
       <div className="container grid grid-two-column">
         <div className="bio-image">
           <img src={bioImage} alt="bio-data" />

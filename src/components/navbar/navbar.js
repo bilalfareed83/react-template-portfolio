@@ -15,14 +15,14 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/about" className="navbar-link about-link">
+            <a href="#about" className="navbar-link about-link">
               About
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/service" className="navbar-link services-link">
+            <a href="#service" className="navbar-link services-link">
               Services
-            </Link>
+            </a>
           </li>
           <li>
             <a href="#portfolio" className="navbar-link portfolio-link">
@@ -30,9 +30,9 @@ export const Navbar = () => {
             </a>
           </li>
           <li>
-            <Link to="contact" className="navbar-link contact-link">
+            <a href="#contact" className="navbar-link contact-link">
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
