@@ -11,8 +11,6 @@
   height: 5rem;
 }
 
-.navbar {
-}
 
 .navbar-lists {
   display: flex;
@@ -36,6 +34,23 @@
   color: var(--helper);
 }
 
+
+.mobile-navbar-btn{
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+}
+
+
+
+.mobile-navbar-btn #cross{
+  display: none;
+}
+
+
+
 .home-link {
 }
 
@@ -49,4 +64,63 @@
 }
 
 .contact-link {
+}
+
+
+@media screen and (max-width: 980px) {
+  .header{
+    position: relative;
+  }
+  .mobile-navbar-btn{
+    display: block;
+    z-index: 999;
+    color: var(--balck);
+  }
+  .mobile-navbar-btn ion-icon{
+    width: 4rem;
+    height: 4rem;
+  }
+  .header .navbar {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  .header .navbar-lists{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-link:link,
+.navbar-link:visited{
+  color: var(--balck);
+  font-size: 3.2rem;
+}
+
+.active .navbar{
+  transform: translateX(0%);
+    transition: all 0.5s linear;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+  .active #menu{
+    display: none;
+  }
+
+  .active #cross{
+    display: block;
+  }
 }

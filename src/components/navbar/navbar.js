@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../../images/logo_collective.png";
 import { Link } from "react-router-dom";
+import { MobileNav } from "./mobileNav";
 
 export const Navbar = () => {
+  const [navToggle, setNavToggle] = useState(false);
+  const navToggleFunc = () => setNavToggle(!navToggle);
   return (
-    <header className="header">
+    <header className={!navToggle ? "header" : "header active"}>
       <img src={logo} alt="cssr" />
       <nav className="navbar">
         <ul className="navbar-lists">
@@ -36,6 +39,7 @@ export const Navbar = () => {
           </li>
         </ul>
       </nav>
+      <MobileNav navToggle={navToggle} navToggleFunc={navToggleFunc} />
     </header>
   );
 };
