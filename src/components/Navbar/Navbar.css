@@ -12,6 +12,20 @@
 }
 
 
+.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 999;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  /* margin-top: 3rem; */
+  transition: all 0.3s linear;
+}
+
 .navbar-lists {
   display: flex;
   gap: 4.8rem;
@@ -86,7 +100,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color:red;
+    background-color:var(--helper);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -3,12 +3,29 @@ import "./navbar.css";
 import logo from "../../images/logo_collective.png";
 import { Link } from "react-router-dom";
 import { MobileNav } from "./mobileNav";
+import { BioData } from "../bio/bioData";
 
 export const Navbar = () => {
   const [navToggle, setNavToggle] = useState(false);
   const navToggleFunc = () => setNavToggle(!navToggle);
+  const [stickyNav, setSticky] = useState(false);
+
+  const handleStickyNav = () => {
+    if (window.scrollY >= 200) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleStickyNav);
+  console.log(stickyNav);
   return (
-    <header className={!navToggle ? "header" : "header active"}>
+    <header
+      className={
+        !navToggle ? (stickyNav ? "sticky header" : "header") : "header active"
+      }
+    >
       <img src={logo} alt="cssr" />
       <nav className="navbar">
         <ul className="navbar-lists">
