@@ -76,7 +76,7 @@ export const Portfolio = () => {
           return (
             item.ref && (
               <div className="img-overlay p-btn--1" key={index}>
-                <img src={item.images} alt={item.val} />
+                <img src={item.images} alt={item.val} loading="lazy" />
                 <div className="overlay">
                   <Link to={item.link} className="common-heading">
                     {item.val}

@@ -40,7 +40,12 @@ export default function Testimonial() {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src={image1} alt="client" className="client-img" />
+                <img
+                  src={image1}
+                  alt="client"
+                  className="client-img"
+                  loading="lazy"
+                />
               </figure>
               <div className="client-data-details">
                 <p>Babaer Azam</p>
@@ -58,7 +63,12 @@ export default function Testimonial() {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src={image1} alt="client" className="client-img" />
+                <img
+                  src={image1}
+                  alt="client"
+                  className="client-img"
+                  loading="lazy"
+                />
               </figure>
               <div className="client-data-details">
                 <p>Babaer Azam</p>
@@ -76,7 +86,12 @@ export default function Testimonial() {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src={image1} alt="client" className="client-img" />
+                <img
+                  src={image1}
+                  alt="client"
+                  className="client-img"
+                  loading="lazy"
+                />
               </figure>
               <div className="client-data-details">
                 <p>Babaer Azam</p>
@@ -94,7 +109,12 @@ export default function Testimonial() {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src={image1} alt="client" className="client-img" />
+                <img
+                  src={image1}
+                  alt="client"
+                  className="client-img"
+                  loading="lazy"
+                />
               </figure>
               <div className="client-data-details">
                 <p>Babaer Azam</p>
@@ -112,7 +132,12 @@ export default function Testimonial() {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src={image1} alt="client" className="client-img" />
+                <img
+                  src={image1}
+                  alt="client"
+                  className="client-img"
+                  loading="lazy"
+                />
               </figure>
               <div className="client-data-details">
                 <p>Babaer Azam</p>
@@ -130,7 +155,12 @@ export default function Testimonial() {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src={image1} alt="client" className="client-img" />
+                <img
+                  src={image1}
+                  alt="client"
+                  className="client-img"
+                  loading="lazy"
+                />
               </figure>
               <div className="client-data-details">
                 <p>Babaer Azam</p>
@@ -148,7 +178,12 @@ export default function Testimonial() {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src={image1} alt="client" className="client-img" />
+                <img
+                  src={image1}
+                  alt="client"
+                  className="client-img"
+                  loading="lazy"
+                />
               </figure>
               <div className="client-data-details">
                 <p>Babaer Azam</p>
@@ -166,7 +201,12 @@ export default function Testimonial() {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src={image1} alt="client" className="client-img" />
+                <img
+                  src={image1}
+                  alt="client"
+                  className="client-img"
+                  loading="lazy"
+                />
               </figure>
               <div className="client-data-details">
                 <p>Babaer Azam</p>
@@ -184,7 +224,12 @@ export default function Testimonial() {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src={image1} alt="client" className="client-img" />
+                <img
+                  src={image1}
+                  alt="client"
+                  className="client-img"
+                  loading="lazy"
+                />
               </figure>
               <div className="client-data-details">
                 <p>Babaer Azam</p>

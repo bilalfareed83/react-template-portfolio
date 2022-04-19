@@ -8,7 +8,7 @@ export const BioData = () => {
     <section className="section-bio section" id="about">
       <div className="container grid grid-two-column">
         <div className="bio-image">
-          <img src={bioImage} alt="bio-data" />
+          <img src={bioImage} alt="bio-data" loading="lazy" />
         </div>
         <div className="bio-data">
           <h2 className="common-heading">My Bio Data</h2>
