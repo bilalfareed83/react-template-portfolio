@@ -1,7 +1,13 @@
 import React from "react";
 import "./contact.css";
+import { useForm, ValidationError } from "@formspree/react";
 
 export const Contact = () => {
+  const [state, handleSubmit] = useForm("xyyonvyb");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
+
   return (
     <section className="section section-contact" id="contact">
       <div className="container">
@@ -18,20 +24,39 @@ export const Contact = () => {
       </div>
 
       <div className="section-contact-main contact-container">
-        <form action="#">
+        <form onSubmit={handleSubmit}>
           <div className="grid grid-two-column">
             <div>
               <label htmlFor="username"></label>
               <input
                 type="text"
                 name="username"
+                autoComplete="off"
                 placeholder="username"
                 id="username"
+                required
+              />
+              <ValidationError
+                prefix="Username"
+                field="username"
+                errors={state.errors}
               />
             </div>
             <div>
               <label htmlFor="email"></label>
-              <input type="text" name="email" placeholder="email" id="email" />
+              <input
+                type="email"
+                name="email"
+                autoComplete="off"
+                placeholder="email"
+                id="email"
+                required
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
             </div>
           </div>
           <div>
@@ -39,27 +64,38 @@ export const Contact = () => {
             <input
               type="text"
               name="subject"
+              autoComplete="off"
               id="subject"
               placeholder="subject"
+              required
+            />
+            <ValidationError
+              prefix="Subject"
+              field="subject"
+              errors={state.errors}
             />
           </div>
           <div>
             <label htmlFor="textarea"></label>
             <textarea
-              name="textarea"
-              id="textarea"
+              name="message"
+              id="message"
+              autoComplete="off"
+              placeholder="type message here..."
               rows="10"
               cols="30"
+              required
             ></textarea>
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </div>
           <div>
-            <input
-              type="submit"
-              name="submit"
-              id="submit"
-              className="btn"
-              value="Send message"
-            />
+            <button type="submit" className="btn" disabled={state.submitting}>
+              Submit
+            </button>
           </div>
         </form>
       </div>
