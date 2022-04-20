@@ -63,21 +63,14 @@
   display: none;
 }
 
+/* media query */
 
 
-.home-link {
-}
-
-.about.link {
-}
-
-.services-link {
-}
-
-.portfolio-link {
-}
-
-.contact-link {
+@media screen and (max-width: 81em) {
+  .navbar-lists{
+    gap:3.4rem
+  }
+  
 }
 
 
@@ -138,3 +131,7 @@
     display: block;
   }
 }
+
+
+
+

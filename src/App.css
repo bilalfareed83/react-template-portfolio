@@ -31,7 +31,12 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
   /* 1rem: 10px; */
+}
+
+body{
+  overflow-x: hidden;
 }
 
 h1,
@@ -139,4 +144,51 @@ li {
   height: 0.3rem;
   width: 20rem;
   background-color: var(--helper);
+}
+
+
+/* media query */
+
+/* 81em === 1300px */
+
+@media screen and (max-width: 81em) {
+  .container{
+    max-width: 110rem;
+    padding: 0 3.2rem;
+  }
+  
+}
+
+/* 1100 px === 68em */
+
+@media screen and (max-width: 68em) {
+  
+  html{
+    font-size: 56.25%;
+  }
+  
+  .container{
+    max-width: 100rem;
+  }
+  .grid{
+    gap:4.8rem
+  }
+  
+}
+
+/* 930px === 58em */
+
+@media screen and (max-width: 58em) {
+  
+  html{
+    font-size: 50%;
+  }
+  
+  /* .container{
+    max-width: 100rem;
+  }
+  .grid{
+    gap:4.8rem
+  } */
+  
 }

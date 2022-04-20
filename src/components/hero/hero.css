@@ -37,3 +37,14 @@
 .hero-images {
   max-width: 80%;
 }
+
+/* media query */
+
+/* 930px === 58em */
+
+@media screen and (max-width: 58em) {
+  
+  .section-hero h1{ line-height: 1.05}
+
+  
+}

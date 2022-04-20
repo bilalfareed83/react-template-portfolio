@@ -3,7 +3,6 @@ import "./navbar.css";
 import logo from "../../images/logo_collective.png";
 import { Link } from "react-router-dom";
 import { MobileNav } from "./mobileNav";
-import { BioData } from "../bio/bioData";
 
 export const Navbar = () => {
   const [navToggle, setNavToggle] = useState(false);
