@@ -65,3 +65,19 @@
     border: 1px solid var(--black);
     animation: water-wave 3s linear infinite;
 }
+
+
+/* media query */
+
+@media screen and (max-width: 58em) {
+    
+    .section-service .grid{
+        gap: 6rem;
+    }
+
+   .section-service .grid-three-column{
+       grid-template-columns: repeat(2, 1fr);
+   }
+    
+    
+  }

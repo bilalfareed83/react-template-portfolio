@@ -73,3 +73,15 @@
 .section-footer a:hover,.section-footer a:active{
     color: var(--white);
 }
+
+/* media query */
+
+@media screen and (max-width: 58em) {
+    
+   
+   .section-footer .grid-four-column{
+       grid-template-columns: repeat(2, 1fr);
+   }
+    
+    
+  }
