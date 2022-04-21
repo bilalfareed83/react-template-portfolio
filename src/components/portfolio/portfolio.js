@@ -86,46 +86,7 @@ export const Portfolio = () => {
             )
           );
         })}
-        {/* <div className="img-overlay p-btn--1">
-          <img src={image2} alt="portfolio" />
-          <div className="overlay">
-            <Link to="#" className="common-heading">
-              Project 2
-            </Link>
-          </div>
-        </div>
-        <div className="img-overlay p-btn--2">
-          <img src={image3} alt="portfolio" />
-          <div className="overlay">
-            <Link to="#" className="common-heading">
-              Project 3
-            </Link>
-          </div>
-        </div>
-        <div className="img-overlay p-btn--3">
-          <img src={image4} alt="portfolio" />
-          <div className="overlay">
-            <Link to="#" className="common-heading">
-              Project 4
-            </Link>
-          </div>
-        </div>
-        <div className="img-overlay p-btn--3">
-          <img src={image1} alt="portfolio" />
-          <div className="overlay">
-            <Link to="#" className="common-heading">
-              Project 5
-            </Link>
-          </div>
-        </div>
-        <div className="img-overlay p-btn--3">
-          <img src={image6} alt="portfolio" />
-          <div className="overlay">
-            <Link to="#" className="common-heading">
-              Project 6
-            </Link>
-          </div>
-        </div> */}
+        
       </div>
     </section>
   );

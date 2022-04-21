@@ -66,3 +66,23 @@
 .p-image-not-active {
   display: none;
 }
+
+
+ /* media query  */
+
+/* 790px === 49em */
+
+@media screen and (max-width: 49em) {
+  
+  .section-portfolio .grid-three-column{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 36em) {
+  
+  .section-portfolio .grid-three-column{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+ }

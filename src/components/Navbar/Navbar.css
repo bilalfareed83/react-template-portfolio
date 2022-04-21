@@ -135,3 +135,13 @@
 
 
 
+
+/* 580px === 36em */
+
+@media screen and (max-width: 36em) {
+  
+  .header{
+    padding: 0 3.2rem;
+  }
+  
+ }

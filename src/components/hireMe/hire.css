@@ -35,3 +35,15 @@
     color: var(--white);
     margin-bottom: 1.8rem;
 }
+
+
+/* media query */
+ /* 580px === 36em */
+
+ @media screen and (max-width: 36em) {
+  
+    .section-hire h2{
+        font-size: 3.6rem;
+    }
+    
+   }

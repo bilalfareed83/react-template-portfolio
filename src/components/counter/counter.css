@@ -13,3 +13,25 @@
     color: var(--white);
     text-transform: capitalize;
 }
+
+
+/* media query  */
+
+/* 790px === 49em */
+
+@media screen and (max-width: 49em) {
+  
+    .section-work-data .grid-four-column{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* 580px === 36em */
+
+@media screen and (max-width: 36em) {
+  
+    .counter-numbers{
+        font-size: 3.2rem;
+    }
+    
+   }

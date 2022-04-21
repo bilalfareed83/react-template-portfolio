@@ -48,3 +48,24 @@
 
   
 }
+
+@media screen and (max-width: 49em) {
+  
+  .section-hero .grid-two-column{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section-hero .section-hero-data{
+    align-items: center;
+  }
+
+  .hero-para{
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .section-hero img{
+    width: 70%;
+  }
+  
+ }
