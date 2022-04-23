@@ -42,3 +42,21 @@
     height: 45rem;
     border: none;
 }
+
+
+/* media query */
+ /* 580px === 36em */
+
+ @media screen and (max-width: 36em) {
+
+    .contact-container{
+        padding: 0 3.2rem;
+    }
+
+
+    .contact-container .grid-two-column{
+        grid-template-columns: 1fr;
+    }
+    
+    
+   }

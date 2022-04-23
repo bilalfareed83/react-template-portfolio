@@ -85,3 +85,15 @@
     
     
   }
+
+  /* media query */
+ /* 580px === 36em */
+
+ @media screen and (max-width: 36em) {
+
+    .section-footer .f-about, .section-footer .f-address{
+        grid-column: 1/-1;
+    }
+    
+    
+   }
