@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -15,13 +15,19 @@ import { Autoplay, Pagination } from "swiper";
 import image1 from "../../images/portfolio1.jpg";
 
 export default function Testimonial() {
+  const [swiperBox, setSwiperBox] = useState(false);
+  const widthSize = window.matchMedia("(max-width: 780px)");
+  const jQueryFun = (widthSize) =>
+    widthSize.matches ? setSwiperBox(true) : setSwiperBox(false);
+  widthSize.addEventListener("change", jQueryFun);
+
   return (
     <section className="section section-testimonial">
       <div className="container">
         <h2 className="common-heading">Happy client works</h2>
 
         <Swiper
-          slidesPerView={2}
+          slidesPerView={!swiperBox ? 2 : 1}
           spaceBetween={30}
           autoplay={true}
           pagination={{
